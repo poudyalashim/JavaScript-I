@@ -26,7 +26,20 @@ const newOne = {
   gender: "F"
 }
 
+// const myObject;
+
+// myObject.value = 1
+// myObject.otherValue = 2
+
+// const myObject = {
+//   value: 1,
+//   other: 2
+// }
+
 const newTwo = {
+  greeting: function(){
+    return `Hello, My name is (${this.name}`
+  },
   id: 2,
   name: "Kennan", 
   email: "kdiben1@tinypic.com",
@@ -55,8 +68,6 @@ const newFive = {
 }
 
 
-
-
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
@@ -65,17 +76,20 @@ console.log(newOne.name);
 
 // Kennan's ID
 console.log(newTwo.id);
+
 // Keven's email
+console.log(newThree.email);
 
 // Gannie's name
 console.log(newFour.name);
+
 // Antonietta's Gender
 
 console.log(newFive.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-console.log("Hello, my name is " + (newTwo.name) +"!");
+console.log(newTwo.greeting());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 
@@ -83,7 +97,7 @@ const letmultiply = function (num1, num2){
 antonietta.multiplyNums = letmultiply;
   return num1 * num2;
 }
-console.log(antonietta.multiplyNums(3,4));
+// console.log(antonietta.multiplyNums(3,4));
 
 // console.log((newFive.multiplyNums)(3,4));
 
